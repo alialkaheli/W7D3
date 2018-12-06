@@ -8,7 +8,10 @@ export const receiveAllPokemon = pokemon => {
   });
 };
 
-export const requestAllPokemon = () => (dispatch) => (
-  APIUtil.fetchAllPokemon()
+export const requestAllPokemon = () => dispatch => {
+  // debugger
+  return (
+    APIUtil.fetchAllPokemon()
     .then(pokemon => dispatch(receiveAllPokemon(pokemon)))
-);
+  );
+};

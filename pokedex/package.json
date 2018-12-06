@@ -23,7 +23,7 @@
     "test": "test"
   },
   "scripts": {
-    "webscript": "webpack --mode=development --watch"
+    "webpack": "webpack --mode=development --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -6,10 +6,13 @@ import configureStore from './store/store';
 import selectAllPokemon from './reducers/selectors';
 import {Provider} from 'react-redux';
 import PokemonContainer from './components/pokemon_index_container';
+import {HashRouter, Route} from 'react-router-dom';
 
 const Root = ({store}) => (
   <Provider store={store}>
-    <PokemonContainer/>
+    <HashRouter>
+      <Route path="/" component={PokemonContainer}/>
+    </HashRouter>
   </Provider>
 );
 

@@ -5,7 +5,7 @@ import {receiveAllPokemon, requestAllPokemon} from './actions/pokemon_actions';
 import configureStore from './store/store';
 import selectAllPokemon from './reducers/selectors';
 import {Provider} from 'react-redux';
-import PokemonContainer from './components/pokemon_index_container';
+import PokemonContainer from './components/pokemon/pokemon_index_container';
 import {HashRouter, Route} from 'react-router-dom';
 
 const Root = ({store}) => (
